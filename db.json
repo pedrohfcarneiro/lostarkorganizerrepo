@@ -1,0 +1,143 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Pugilist",
+      "class": "Battlemaster",
+      "level": 53,
+      "itemLevel": 1385,
+      "Una1": {
+        "name": "Ritual of Purification",
+        "Done": false,
+        "Reputation Progress": 0
+      },
+      "Una2": {
+        "name": "Mata os Mosquito",
+        "Done": false,
+        "Reputation Progress": 0
+      },
+      "Una3": {
+        "name": "",
+        "Done": false,
+        "Reputation Progress": 0
+      },
+      "Abyssals": [
+        {
+          "name": "Aira's Oculus [Hard]",
+          "Done": true
+        },
+        {
+          "name": "Oreha Preveza [Hard]",
+          "Done": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Kaîné",
+      "class": "Deathblade",
+      "level": 54,
+      "itemLevel": 1345
+    },
+    {
+      "id": 3,
+      "name": "Eînzbern",
+      "class": "Soulfist",
+      "level": 53,
+      "itemLevel": 920
+    },
+    {
+      "name": "Scáthakh",
+      "class": "Lancemaster",
+      "level": "53",
+      "itemLevel": "960",
+      "id": 4
+    },
+    {
+      "name": "Runin",
+      "class": "Sorceress",
+      "level": "51",
+      "itemLevel": "820",
+      "id": 5
+    },
+    {
+      "name": "Teste",
+      "class": "",
+      "level": 0,
+      "id": 6
+    },
+    {
+      "name": "Nîer",
+      "class": "Sharpshooter",
+      "level": "53",
+      "itemLevel": "530",
+      "id": 7
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "Battlemaster"
+    },
+    {
+      "id": 2,
+      "name": "Striker"
+    },
+    {
+      "id": 3,
+      "name": "Soulfist"
+    },
+    {
+      "id": 4,
+      "name": "Scrapper"
+    },
+    {
+      "id": 5,
+      "name": "Lancemaster"
+    },
+    {
+      "id": 6,
+      "name": "Deathblade"
+    },
+    {
+      "id": 7,
+      "name": "Shadowhunter"
+    },
+    {
+      "id": 8,
+      "name": "Sorceress"
+    },
+    {
+      "id": 9,
+      "name": "Bard"
+    },
+    {
+      "id": 10,
+      "name": "Berserker"
+    },
+    {
+      "id": 11,
+      "name": "Paladin"
+    },
+    {
+      "id": 12,
+      "name": "Gunlancer"
+    },
+    {
+      "id": 13,
+      "name": "Sharpshooter"
+    },
+    {
+      "id": 14,
+      "name": "Deadeye"
+    },
+    {
+      "id": 15,
+      "name": "Gunslinger"
+    },
+    {
+      "id": 16,
+      "name": "Artillerist"
+    }
+  ]
+}
