@@ -86,22 +86,16 @@ const CharacterOverview = ({characters, handleUna1DoneChange, updateCharacter}) 
     )
 }
 
-const TabsComponent = ({addCharacter, updateCharacter, newCharacter, handleNameChange, handleClassChange, handleLevelChange, handleItemLevelChange, handleUna1DoneChange, classes, characters}) => {
+const TabsComponent = ({addCharacter, handleTabClicked, updateCharacter, newCharacter, handleNameChange, handleClassChange, handleLevelChange, handleItemLevelChange, handleUna1DoneChange, classes, characters}) => {
     return(
-        <Tabs>
-            <TabList>
-                <Tab>Add Character</Tab>
-                <Tab>Characters Overview</Tab>
-            </TabList>
-
-            <TabPanel>
-                <AddCharacterForm addCharacter={addCharacter} classes={classes} newCharacter={newCharacter} handleNameChange={handleNameChange} handleClassChange={handleClassChange} handleLevelChange={handleLevelChange} handleItemLevelChange={handleItemLevelChange} />
-            </TabPanel>
-            <TabPanel>
-                <h2>Characters Overview</h2>
-                <CharacterOverview characters={characters} handleUna1DoneChange={handleUna1DoneChange} updateCharacter={updateCharacter} />
-            </TabPanel>
-        </Tabs>
+        <div className="tabs">
+            <div className='addCharacterTabWrapper'>
+                <button id="addCharacterTab" className="tabButton" onClick={handleTabClicked("addCharacter")}>Add Character</button>
+            </div>
+            <div className='characterOverviewTabWrapper'>
+                <button id="characterOverviewTab" className="tabButton" onClick={handleTabClicked("characterOverview")}>CharacterOverview</button>
+            </div>        
+        </div>
     )
 }
 
@@ -136,6 +130,14 @@ const App = () => {
             alert(`fail`)
         )
     },[])
+
+    const handleTabClicked = (tabName) => {
+        const handleClickCallback = (event) => {
+            console.log(event.target.className)
+            return "opa"
+        }
+        return handleClickCallback
+    }
 
     const addCharacter = (event) => {
         event.preventDefault()
@@ -224,7 +226,7 @@ const App = () => {
     return (
         <>
             <Notification message={notificationMessage} />
-            <TabsComponent addCharacter={addCharacter} updateCharacter={updateCharacter} classes={classes} newCharacter={newCharacter} handleNameChange={handleNameChange} handleClassChange={handleClassChange} handleLevelChange={handleLevelChange} handleItemLevelChange={handleItemLevelChange} handleUna1DoneChange={handleUna1DoneChange} characters={characters}/>
+            <TabsComponent handleTabClicked={handleTabClicked} addCharacter={addCharacter} updateCharacter={updateCharacter} classes={classes} newCharacter={newCharacter} handleNameChange={handleNameChange} handleClassChange={handleClassChange} handleLevelChange={handleLevelChange} handleItemLevelChange={handleItemLevelChange} handleUna1DoneChange={handleUna1DoneChange} characters={characters}/>
         </>
     )
 }

@@ -17,3 +17,42 @@
   padding: 10px;
   margin-bottom: 10px;
 }
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  height: 50px;
+  border: none;
+}
+
+.tabs button {
+  background-image: url(../src/assets/imgs/Button.png);
+  background-size: cover;
+  float: left;
+  color: black;
+  border: none;
+  height: inherit;
+  width: 190px;
+  height: 40px;
+  border: none;
+  padding: 2px;
+  outline: solid black;
+  margin: 5px;
+}
+
+.tabs button:hover {
+  background-color: rgb(39, 51, 92);
+}
+
+.addCharacterTabWrapper {
+  background-color: black;
+  overflow: hidden;
+}
+
+.tabs button:active {
+  background-color: rgb(39, 51, 92);
+}
